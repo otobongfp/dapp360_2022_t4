@@ -18,7 +18,7 @@ fileToBipList :: IO () -> BipList
 shuffleBIP :: [Int] -> BipOrder
 
 
---TUI
+--TUI: all manipulations to enable us show the screen to the user
 
 --take a BipWord, BipList and BipOrder, return the Int of that Word
 wordToInt :: BipWord -> BipList -> BipOrder -> Int
@@ -29,7 +29,7 @@ intToWord :: Int -> BipList -> BipOrder -> BipWord
 --Take a BIP list and a shuffle and turn to a 2x2 matrix
 buildShuffle :: BipList -> BipOrder -> [[BipWord]]
 
---2x2 Matrix of BipWords and show on screen
+--2x2 Matrix of BipWords and show on screen (46x46 based on the 2048 words of the BIPLIST)
 displayShuffle:: [[BipWord]] -> IO ()
 
 
